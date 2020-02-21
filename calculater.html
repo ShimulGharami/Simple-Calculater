@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculater by Shimul</title>
+    <link href="style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <div class="main">
+        <form action="" name="Form">
+            <input type="text" name="textview" class="textview" disabled>
+        </form>
+        <table>
+            <tr>
+                <td><input type="button" class="button symble" value="C" onclick="c()"></td>
+                <td><input type="button" class="button symble" value="⌫" onclick="back()"></td>
+                <td><input type="button" class="button symble" value="x²" onclick="SR('s')" id="s" disabled></td>
+                <td><input type="button" class="button symble" value="÷" onclick="insertop('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number" value="7" onclick="insertNum(7)"></td>
+                <td><input type="button" class="button number" value="8" onclick="insertNum(8)"></td>
+                <td><input type="button" class="button number" value="9" onclick="insertNum(9)"></td>
+                <td><input type="button" class="button symble" value="X" onclick="insertop('*')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number" value="4" onclick="insertNum(4)"></td>
+                <td><input type="button" class="button number" value="5" onclick="insertNum(5)"></td>
+                <td><input type="button" class="button number" value="6" onclick="insertNum(6)"></td>
+                <td><input type="button" class="button symble" value="-" onclick="insertop('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number" value="1" onclick="insertNum(1)"></td>
+                <td><input type="button" class="button number" value="2" onclick="insertNum(2)"></td>
+                <td><input type="button" class="button number" value="3" onclick="insertNum(3)"></td>
+                <td><input type="button" class="button symble" value="+" onclick="insertop('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="button number" value="0" onclick="insertNum(0)"></td>
+                <td><input type="button" class="button symble" value="&#x221A" onclick="SR('r')" id="r" disabled></td>
+                <td><input type="button" class="button symble" value="." onclick="insertDec()"></td>
+                <td><input type="button" class="button symble" value="=" onclick="insertto('=')"></td>
+            </tr>
+        </table>
+    </div>
+    <script type="" src="calculation.js"></script>
+</body>
+
+</html>
